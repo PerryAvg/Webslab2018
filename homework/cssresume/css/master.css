@@ -14,12 +14,12 @@ h1 {
       text-align: center;
 }
 h2:hover {
-  color: red;
+  color: #0432dc;
 
 }
 
 #name {
-  color: blue;
+  color: #0432dc;
 }
 #address {
 
@@ -27,12 +27,13 @@ h2:hover {
 }
 
 .company {
-  color: pink;
+  color: orange;
 }
 
 .extra {
-  color: yellow;
-  
+  color: #5a6365;
+  font-size: 18px;
+
 }
 address {
   text-align: center;
