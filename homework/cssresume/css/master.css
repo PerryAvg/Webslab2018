@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background: #d2faff;
 }
 
 a:hover {
@@ -16,4 +16,25 @@ h1 {
 h2:hover {
   color: red;
 
+}
+
+#name {
+  color: blue;
+}
+#address {
+
+
+}
+
+.company {
+  color: pink;
+}
+
+.extra {
+  color: yellow;
+  
+}
+address {
+  text-align: center;
+}
 }
