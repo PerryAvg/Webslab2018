@@ -22,6 +22,8 @@ h2:hover {
   color: #0432dc;
 }
 #address {
+font-weight: bold;
+font-size: 20px;
 
 
 }
@@ -33,6 +35,18 @@ h2:hover {
 .extra {
   color: #5a6365;
   font-size: 18px;
+
+}
+.info {
+  color: #757575;
+}
+
+.info2 {
+font-weight: bolder;
+}
+
+.info3:hover {
+  color: red;
 
 }
 address {
