@@ -1,3 +1,93 @@
 body {
-   background: teal;
+   background: white;
+}
+.wrapper * {
+  background: blue;
+  padding: 10px;
+}
+
+.main-head {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.main-nav {
+  grid-area: nav;
+}
+.side {
+  grid-area: sidebar;
+}
+.ad {
+  grid-area: ad;
+}
+.main-footer {
+  grid-area: footer;
+}
+
+/* Mobile Layout */
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "ad"
+    "footer";
+}
+
+
+/* tablet layout */
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+      "header  header"
+      "nav nav"
+      "content ad"
+      "footer  footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
+/* Desktop layout */
+
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 4fr 1fr 0fr;
+    grid-template-areas:
+      "header header  header"
+      "content nav nav"
+      "content ad ad"
+      "footer footer  footer"
+
+   }
+   nav ul {
+     flex-direction:column;
+   }
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+}
+
+a.hover {
+  color: red;
+}
+
+li.active {
+  color: blue;
 }
