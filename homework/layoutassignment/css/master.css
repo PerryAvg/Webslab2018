@@ -1,28 +1,40 @@
 body {
    background: white;
 }
-.wrapper * {
+/* .wrapper * {
   background: blue;
   padding: 10px;
-}
+} */
 
 .main-head {
   grid-area: header;
+  background:blue;
+
+}
+img.ultra {
+  width: 100px;
+  height: 100px;
+
 }
 .content {
   grid-area: content;
+  background: red;
 }
 .main-nav {
   grid-area: nav;
+  background: yellow;
 }
 .side {
   grid-area: sidebar;
+  background: green;
 }
 .ad {
   grid-area: ad;
+  background: orange;
 }
 .main-footer {
   grid-area: footer;
+  background: black;
 }
 
 /* Mobile Layout */
@@ -71,7 +83,7 @@ body {
       "footer footer  footer"
 
    }
-   nav ul {
+.main-nav ul {
      flex-direction:column;
    }
 }
@@ -81,13 +93,20 @@ body {
   padding: 0;
   list-style: none;
 
+}
+.main-nav li {
+  margin: 0;
+  padding-left: 0;
+  background: green;
+  border-bottom: 1px solid blue;
+
 
 }
 
-a.hover {
-  color: red;
+.main-nav ul li:hover {
+  background: yellow;
 }
 
-li.active {
-  color: blue;
+.main-nav li.active {
+  background: orange;
 }
