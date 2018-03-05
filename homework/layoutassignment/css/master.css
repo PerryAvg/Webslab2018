@@ -1,10 +1,14 @@
 body {
    background: white;
+   font-family: 'Questrial', sans-serif;
+   font-size: 25px;
+   text-align: center;
 }
 /* .wrapper * {
   background: blue;
   padding: 10px;
 } */
+
 
 .main-head {
   grid-area: header;
@@ -15,6 +19,52 @@ img.ultra {
   width: 2000px;
   height:300px;
 
+}
+img.sound {
+  width: 100%;
+  height: auto;
+}
+
+img.concert1 {
+  width: 300px;
+  height: 300px;
+}
+img.concert2 {
+  width: 300px;
+  height: 300px;
+}
+img.concert3 {
+  width: 300px;
+  height: 300px;
+}
+img.concert4 {
+  width: 300px;
+  height: 300px;
+}
+img.concert5 {
+  width: 300px;
+  height: 300px;
+}
+img.dj {
+  width: 300px;
+  height: 300px;
+}
+
+th {
+  background-color: white;
+  font-size: 2em;
+  font-family: 'Questrial', sans-serif;
+  width: 100%;
+  height: auto;
+
+
+}
+
+td {
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+  width: 100%;
+  height: auto;
 }
 
 img.odesza1 {
@@ -62,6 +112,7 @@ img.boombox2 {
 .main-nav {
   grid-area: nav;
   background: yellow;
+  text-decoration: none;
 }
 .side {
   grid-area: sidebar;
