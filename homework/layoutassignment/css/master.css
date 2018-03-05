@@ -12,10 +12,49 @@ body {
 
 }
 img.ultra {
-  width: 100px;
-  height: 100px;
+  width: 2000px;
+  height:300px;
 
 }
+
+img.odesza1 {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  /* margin-left: 20px; */
+  /* margin-right: 2px; */
+}
+
+img.boombox1 {
+width: 300px;
+height: 300px;
+margin-bottom: 10px;
+
+}
+
+
+img.night1 {
+width: 300px;
+height: 300px;
+margin-bottom: 10px;
+
+}
+
+img.boombox2 {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 .content {
   grid-area: content;
   background: red;
@@ -42,7 +81,7 @@ img.ultra {
 
 .wrapper {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 0px;
   grid-template-areas:
     "header"
     "nav"
