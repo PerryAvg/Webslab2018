@@ -15,9 +15,11 @@ body {
   background:blue;
 
 }
-img.ultra {
-  width: 2000px;
-  height:300px;
+.ultra {
+  height: 300px;
+  background-image: url("../images/ultra1.jpg");
+  background-size: cover;
+  background-position: center;
 
 }
 img.sound {
@@ -119,6 +121,10 @@ img.boombox2 {
 .content {
   grid-area: content;
   background: red;
+
+}
+body {
+  color: white;
 }
 .main-nav {
   grid-area: nav;
@@ -159,7 +165,7 @@ img.boombox2 {
   .wrapper {
     grid-template-columns: 4fr 1fr;
     grid-template-areas:
-      "header  header"
+      "header header"
       "nav nav"
       "content ad"
       "footer  footer";
@@ -174,7 +180,7 @@ img.boombox2 {
 /* Desktop layout */
 
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .wrapper {
     grid-template-columns: 4fr 1fr 0fr;
     grid-template-areas:
