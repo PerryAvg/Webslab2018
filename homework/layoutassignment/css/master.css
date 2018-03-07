@@ -1,5 +1,5 @@
 body {
-   background: white;
+   background: black;
    font-family: 'Questrial', sans-serif;
    font-size: 25px;
    text-align: center;
@@ -12,17 +12,22 @@ body {
 
 .main-head {
   grid-area: header;
-  background:blue;
+  background:black;
 
 }
-.ultra {
+.PEP {
   height: 300px;
-  background-image: url("../images/ultra1.jpg");
+  background-image: url("../images/PEP.png");
   background-size: cover;
   background-position: center;
 
+
 }
 img.sound {
+  width: 100%;
+  height: auto;
+}
+img.perryultra {
   width: 100%;
   height: auto;
 }
@@ -64,7 +69,7 @@ img.dj {
   width:100%;
 }
 th {
-  background-color: white;
+  background-color: black;
   font-size: 2em;
   font-family: 'Questrial', sans-serif;
   width: 100%;
@@ -120,24 +125,29 @@ img.boombox2 {
 
 .content {
   grid-area: content;
-  background: red;
+  background: white;
 
 }
 body {
+  color: #1920ba;
+}
+ul {
   color: white;
 }
 .main-nav {
   grid-area: nav;
-  background: yellow;
+  background: black
   text-decoration: none;
+
+
 }
 .side {
   grid-area: sidebar;
-  background: green;
+  background: black;
 }
 .ad {
   grid-area: ad;
-  background: orange;
+  background: black;
 }
 .main-footer {
   grid-area: footer;
@@ -158,6 +168,32 @@ body {
     "footer";
 }
 
+a:visited {
+  color:white;
+  text-decoration: none;
+
+}
+
+a:link {
+  color:white;
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+.main-nav ul li:hover {
+  background: #bccdee;
+}
+.main-nav ul li {
+  background: #1920ba;
+  list-style: none;
+}
+.main-nav li.active {
+  background: black;
+}
 
 /* tablet layout */
 
@@ -173,9 +209,27 @@ body {
   nav ul {
     display: flex;
     justify-content: space-between;
+    color: white;
 
   }
+a:visited {
+  color:white;
+  text-decoration: none;
+
 }
+
+a:link {
+  color:white;
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+
 
 /* Desktop layout */
 
@@ -204,16 +258,32 @@ body {
 .main-nav li {
   margin: 0;
   padding-left: 0;
-  background: green;
+  background: #1920ba;
   border-bottom: 1px solid blue;
 
 
 }
 
 .main-nav ul li:hover {
-  background: yellow;
+  background: #bccdee;
 }
 
 .main-nav li.active {
-  background: orange;
+  background: black;
+
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+
+}
+
+a:link {
+  color:white;
+  text-decoration: none;
+
+}
+a:hover {
+  text-decoration: underline;
+
 }
