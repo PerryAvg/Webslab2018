@@ -5,11 +5,20 @@
     <title>Demo Jquery</title>
   </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="master.css">
+<link rel="stylesheet" href="css/master.css">
   <body>
     <div class="content">
-      <h1 id="title">How To Make A Hip-hop Beat</h1>
+      <h1 id="title">How To Make A Hip-hop Beat: by KILO</h1>
       <!-- <img src="pup1.jpg" width="300" alt="puppy" id="pup"> -->
+<p id="info"></p>
+
+       <!-- Audio Player HTML -->
+<div class="audio-player">
+  <h1>Beat Element</h1>
+  <!-- <img class="cover" src="img/cover.png" alt=""> -->
+  <audio id="audio-player" src="media/DRUMS.wav" type="audio/wav" controls="controls" autoplay></audio>
+</div>
+
     </div>
     <nav>
       <a href="#" id="step-one">Step One</a> | <a href="#" id="step-two">Step Two</a> | <a href="#" id="step-three">Step Three</a>
@@ -22,35 +31,42 @@
         $("#title").html("Step one: Add some drums");
         $(".content").removeClass("content-two");
         $(".content").addClass("content-one");
-        
-        // $("#pup").attr("src", "pup2.jpg");
-      });
+        $("#audio-player").attr("src", "media/DRUMS.wav");
+        $("#info").html ("Add a kick, snare or clap, and some percussion to give your beat a groove");
+  });
+
       $("#step-two").click( function(){
         $("#title").html("Step Two: Add some chords");
         $(".content").removeClass("content-one");
         $(".content").addClass("content-two");
-        // $("#pup").attr("src", "pup1.jpg");
+        $("#audio-player").attr("src", "media/CHORDS.wav");
+        $("#info").html ("Make some chords in the same key that vibe with your drums");
       });
+
       $("#step-three").click( function(){
         $("#title").html("Step Three: Add an 808");
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-two");
         $(".content").addClass("content-three");
-        // $("#pup").attr("src", "pup1.jpg");
+        $("#audio-player").attr("src", "media/808.wav");
+        $("#info").html ("Add a boomy 808 counter melody to accent your drums");
       });
       $("#step-four").click( function(){
         $("#title").html("Step Four: Add an accent melody");
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-three");
         $(".content").addClass("content-four");
-        // $("#pup").attr("src", "pup1.jpg");
+        $("#audio-player").attr("src", "media/accent1.wav");
+        $("#info").html ("Add an accent melody using the notes of your chords ");
+
       });
       $("#step-five").click( function(){
         $("#title").html("Step Five: Add Some More Melodies");
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-four");
         $(".content").addClass("content-five");
-        // $("#pup").attr("src", "pup1.jpg");
+        $("#audio-player").attr("src", "media/accents2.wav");
+        $("#info").html ("Add more vibey sounds and melodies that differ from eachother, but tell the same story");
       });
 
       $("#step-six").click( function(){
@@ -58,15 +74,20 @@
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-five");
         $(".content").addClass("content-six");
-        // $("#pup").attr("src", "pup1.jpg");
+        $("#audio-player").attr("src", "media/FX.wav");
+        $("#info").html ("I like to use white noise as a good transition effect");
       });
       $("#step-seven").click( function(){
         $("#title").html("Step Seven: Put it all together");
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-six");
         $(".content").addClass("content-seven");
-        // $("#pup").attr("src", "pup1.jpg");
+        $("#audio-player").attr("src", "media/fp.wav");
+        $("#info").html ("Put it together and bump it!!");
       });
+
+
+
     </script>
   </body>
 </html>
