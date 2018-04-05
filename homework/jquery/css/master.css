@@ -1,14 +1,75 @@
-.step-one {
+#step-one {
   background-color: red;
   margin 15px;
   width: 300px;
   height: 300px;
+  font-size: 20px;
 }
 
-.box-big {
-border-radius: 5px;
-border: 3px solid #000;
-
-
-
+#step-two {
+  background-color: orange;
+  margin 15px;
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
 }
+
+#step-three {
+  background-color: yellow;
+  margin 15px;
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+}
+#step-four {
+  background-color: green;
+  margin 15px;
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+}
+
+#step-five {
+  background-color: blue;
+  margin 15px;
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+}
+#step-six {
+  background-color: purple;
+  margin 15px;
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+}
+#step-seven {
+  background-color: #8e8e93;
+  margin 15px;
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+}
+}
+#chord {
+  width: 5px;
+  height: 2px;
+}
+body {
+  background: #d2faff;
+  color: #0d0f5f;
+}
+
+a:hover {
+  color:white;
+    text-decoration: underline;
+}
+
+a:link {
+  color:white;
+  text-decoration: underline;
+}
+
+  a:visited {
+    color:black;
+    text-decoration: underline;

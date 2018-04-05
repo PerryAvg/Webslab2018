@@ -11,7 +11,7 @@
       <h1 id="title">How To Make A Hip-hop Beat: by KILO</h1>
       <!-- <img src="pup1.jpg" width="300" alt="puppy" id="pup"> -->
 <p id="info"></p>
-
+<img src="images/chord.jpg" alt="chord" id="chord">
        <!-- Audio Player HTML -->
 <div class="audio-player">
   <h1>Beat Element</h1>
@@ -23,8 +23,8 @@
     <nav>
       <a href="#" id="step-one">Step One</a> | <a href="#" id="step-two">Step Two</a> | <a href="#" id="step-three">Step Three</a>
 | <a href="#" id="step-four">Step Four</a> | <a href="#" id="step-five">Step Five</a> | <a href="#" id="step-six">Step Six</a>| <a href="#" id="step-seven">Step Seven</a>
-
-
+<a href="#" id="pic">Hide Image</a> | <a href="#" id="nopic">Show Image</a>
+<br><br>
     </nav>
     <script type="text/javascript">
       $("#step-one").click( function(){
@@ -33,32 +33,38 @@
         $(".content").addClass("content-one");
         $("#audio-player").attr("src", "media/DRUMS.wav");
         $("#info").html ("Add a kick, snare or clap, and some percussion to give your beat a groove");
+        $("#chord").attr("src","images/drums.jpg");
+
+
   });
 
       $("#step-two").click( function(){
-        $("#title").html("Step Two: Add some chords");
+        $("#title").html("Step Two: Add Some Chords");
         $(".content").removeClass("content-one");
         $(".content").addClass("content-two");
         $("#audio-player").attr("src", "media/CHORDS.wav");
         $("#info").html ("Make some chords in the same key that vibe with your drums");
+         $("#chord").attr("src","images/chord.jpg");
+
       });
 
       $("#step-three").click( function(){
-        $("#title").html("Step Three: Add an 808");
+        $("#title").html("Step Three: Add An 808");
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-two");
         $(".content").addClass("content-three");
         $("#audio-player").attr("src", "media/808.wav");
         $("#info").html ("Add a boomy 808 counter melody to accent your drums");
+        $("#chord").attr("src","images/bass.jpg");
       });
       $("#step-four").click( function(){
-        $("#title").html("Step Four: Add an accent melody");
+        $("#title").html("Step Four: Add An Accent Melody");
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-three");
         $(".content").addClass("content-four");
         $("#audio-player").attr("src", "media/accent1.wav");
         $("#info").html ("Add an accent melody using the notes of your chords ");
-
+        $("#chord").attr("src","images/accent1.jpg");
       });
       $("#step-five").click( function(){
         $("#title").html("Step Five: Add Some More Melodies");
@@ -66,27 +72,36 @@
         $(".content").removeClass("content-four");
         $(".content").addClass("content-five");
         $("#audio-player").attr("src", "media/accents2.wav");
-        $("#info").html ("Add more vibey sounds and melodies that differ from eachother, but tell the same story");
+        $("#info").html ("Add more vibey sounds and melodies that differ from each other, but tell the same story");
+        $("#chord").attr("src","images/accent.jpg");
       });
 
       $("#step-six").click( function(){
-        $("#title").html("Step Six: Add an some effects");
+        $("#title").html("Step Six: Add Some Effects");
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-five");
         $(".content").addClass("content-six");
         $("#audio-player").attr("src", "media/FX.wav");
         $("#info").html ("I like to use white noise as a good transition effect");
+        $("#chord").attr("src","images/FX.jpg");
       });
       $("#step-seven").click( function(){
-        $("#title").html("Step Seven: Put it all together");
+        $("#title").html("Step Seven: Put It All Together");
         // $(".content").removeClass("content-one");
         $(".content").removeClass("content-six");
         $(".content").addClass("content-seven");
         $("#audio-player").attr("src", "media/fp.wav");
         $("#info").html ("Put it together and bump it!!");
+        $("#chord").attr("src","images/bump.jpg");
       });
 
-
+      $("#pic").click(function(){
+       $("#chord").hide();
+       $("#pup").attr("src","images/chord.jpg");
+     });
+     $("#nopic").click(function(){
+       $("#chord").show();
+     });
 
     </script>
   </body>
