@@ -95,7 +95,7 @@ li {
 body {
   color: white;
   font-family:'Oswald', sans-serif;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 
@@ -105,4 +105,5 @@ body {
 h2 {
   color: #009fe9;
   font-family:'Oswald', sans-serif;
+
 }
