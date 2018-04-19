@@ -1,0 +1,323 @@
+body {
+   background: black;
+   font-family: 'Questrial', sans-serif;
+   font-size: 25px;
+   text-align: center;
+}
+/* .wrapper * {
+  background: blue;
+  padding: 10px;
+} */
+
+
+a.outline {
+  color: #000000;
+font-size: 80px;
+font-size: 5.5vw;
+text-decoration: none;
+text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+transition: color 300ms;
+font-family: 'Catamaran', sans-serif;
+color: #000 !important;
+}
+
+.main-head {
+  grid-area: header;
+  background:black;
+
+
+}
+.PEP {
+  height: 100px;
+  width: 120px;
+  background-image: url("../images/kilowhite.png");
+  background-size: cover;
+  background-position:center;
+  padding-left: 30px;
+
+
+
+}
+img.sound {
+  width: 100%;
+  height: auto;
+}
+img.perryultra {
+  width: 100%;
+  height: auto;
+}
+
+/* img.concert1 {
+  width: 300px;
+  height: 300px;
+}
+img.concert2 {
+  width: 300px;
+  height: 300px;
+}
+img.concert3 {
+  width: 300px;
+  height: 300px;
+}
+img.concert4 {
+  width: 300px;
+  height: 300px;
+}
+img.concert5 {
+  width: 300px;
+  height: 300px;
+}
+img.dj {
+  width: 300px;
+  height: 300px; */
+}
+
+.picture-grid {
+  display:grid;
+  grid-template-columns: repeat (auto-fill,minmax(10px,1fr));
+  justify-content:center;
+  grid-gap: 5px;
+  grid-row-gap: 0px;
+
+}
+.grid-box img {
+  width:100%;
+}
+th {
+  background-color: black;
+  font-size: 2em;
+  font-family: 'Questrial', sans-serif;
+  width: 100%;
+  height: auto;
+
+
+}
+
+td {
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+img.odesza1 {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  /* margin-left: 20px; */
+  /* margin-right: 2px; */
+}
+
+img.boombox1 {
+width: 300px;
+height: 300px;
+margin-bottom: 10px;
+
+}
+
+
+img.night1 {
+width: 300px;
+height: 300px;
+margin-bottom: 10px;
+
+}
+
+img.boombox2 {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+img.boombox2 {
+width: 300px;
+height: 300px;
+margin-bottom: 10px;
+
+}
+
+img.odesza2 {
+width: 300px;
+height: 300px;
+margin-bottom: 10px;
+
+}
+
+img.jacku1 {
+width: 300px;
+height: 300px;
+margin-bottom: 10px;
+
+}
+
+
+
+
+
+.content {
+  grid-area: content;
+  background: white;
+
+}
+body {
+  color: #1920ba;
+}
+ul {
+  color: white;
+}
+.main-nav {
+  grid-area: nav;
+  background: black
+  text-decoration: none;
+
+
+}
+.side {
+  grid-area: sidebar;
+  background: black;
+}
+.ad {
+  grid-area: ad;
+  background: black;
+}
+.main-footer {
+  grid-area: footer;
+  background: black;
+}
+
+/* Mobile Layout */
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "ad"
+    "footer";
+}
+
+a:visited {
+  color:white;
+  text-decoration: none;
+
+}
+
+a:link {
+  color:white;
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+.main-nav ul li:hover {
+  background: #bccdee;
+  color: blue;
+}
+.main-nav ul li {
+  background: none;
+  padding: 50px;
+  list-style: none;
+}
+.main-nav li.active {
+  background: black;
+}
+
+/* tablet layout */
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "content ad"
+      "footer  footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+  }
+a:visited {
+  /* color:white; */
+  text-decoration: none;
+
+}
+
+a:link {
+  /* color:white; */
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+
+}
+
+
+
+/* Desktop layout */
+
+
+@media (min-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header  "
+      "nav content "
+      "nav content "
+      "footer footer  "
+
+   }
+.main-nav ul {
+     flex-direction:column;
+   }
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+.main-nav li {
+  margin: 0;
+  padding-left: 0;
+  background: #1920ba;
+  border-bottom: 1px solid white;
+
+
+}
+
+.main-nav ul li:hover {
+  background: #bccdee;
+}
+
+.main-nav li.active {
+  background: black;
+
+}
+a:visited {
+  /* color: white; */
+  text-decoration: none;
+
+}
+
+a:link {
+  /* color:white; */
+  text-decoration: none;
+
+}
+a:hover {
+  text-decoration: underline;
+
+}
