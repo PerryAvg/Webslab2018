@@ -11,14 +11,26 @@ body {
 
 
 a.outline {
-  color: #000000;
+color: #000000;
 font-size: 80px;
 font-size: 5.5vw;
 text-decoration: none;
+text-decoration-line: none;
+text-decoration-style: initial;
+text-decoration-color: initial;
 text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 transition: color 300ms;
+transition-property: color;
+    transition-duration: 100ms;
+    transition-timing-function: initial;
+    transition-delay: initial;
 font-family: 'Catamaran', sans-serif;
 color: #000 !important;
+}
+
+a.outline:hover {
+  /* text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red; */
+color: #fff !important;
 }
 
 .main-head {
@@ -160,7 +172,7 @@ margin-bottom: 10px;
 
 }
 body {
-  color: #1920ba;
+  /* color: #1920ba; */
 }
 ul {
   color: white;
@@ -212,16 +224,16 @@ a:link {
 }
 
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 
 }
 .main-nav ul li:hover {
-  background: #bccdee;
-  color: blue;
+  /* background: #bccdee;
+  color: blue; */
 }
 .main-nav ul li {
   background: none;
-  padding: 50px;
+  padding: 10px;
   list-style: none;
 }
 .main-nav li.active {
@@ -292,18 +304,18 @@ a:hover {
 .main-nav li {
   margin: 0;
   padding-left: 0;
-  background: #1920ba;
-  border-bottom: 1px solid white;
+  /* background: #1920ba;
+  border-bottom: 1px solid white; */
 
 
 }
 
 .main-nav ul li:hover {
-  background: #bccdee;
+  /* background: #bccdee; */
 }
 
 .main-nav li.active {
-  background: black;
+  /* background: black; */
 
 }
 a:visited {
@@ -318,6 +330,6 @@ a:link {
 
 }
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 
 }
