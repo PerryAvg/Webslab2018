@@ -65,7 +65,8 @@ transition-property: color;
     transition-timing-function: initial;
     transition-delay: initial;
 /* font-family: 'Catamaran', sans-serif; */
-font-family: 'Maven Pro', sans-serif;
+/* font-family: 'Maven Pro', sans-serif; */
+font-family: 'Cabin', sans-serif;
 color: #000 !important;
 }
 
